@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <h1 id="title">welcome to web design</h1>
+    <p id="description">Thank you for taking the time to help us improve the design?</p>
+    <form id="survey-form">
+      <fieldset>  
+      <label id="name-label">Enter name<input id="name" type="text" placeholder="Full Name" required />
+      </label>
+      <label id="email-label">Enter email<input id="email" type="email" placeholder="Email" required />
+      </label>
+      <label id="age">Enter age<input id="age" type="number" placeholder="Age" min="16" max="120" required />
+      </label>
+      <label id="number-label">Enter number<input id="number" type="number" min="0" max="1000000000" placeholder="Phone number" required />
+      </label>
+    
+      <label for="dropdown"> Which option best describes your current role?
+        <select id="dropdown">
+          <option value="">select curent role</option>
+          <option value="1">student</option>
+          <option value="2">full time job</option>
+          <option value="3">full time learner</option>
+          <option value="4">prefer not to say</option>
+          <option value="5">other</option>
+        </select>
+      </label>
+
+    </fieldset>
+
+    <fieldset>
+      <legend>Would you recommend web design to a friend?</legend>
+      <label for="definitely"><input id="definitely" type="radio" value="definitely" name="option" checked class="inline" />Definitely</label>
+      <label for="Maybe"><input id="Maybe" type="radio" value="maybe" name="option" class="inline" />Maybe</label>
+    </fieldset>
+
+      <legend>What is your favorite feature of web design</legend>
+      <label for="frontend"><input type="checkbox" value="frontend" class="inline" />frontend develop</label>
+      <label for="backend"><input type="checkbox" value="backend" class="inline" />backend develop</label>
+      <label for="visualization"><input type="checkbox" value="visualization" class="inline" />Data Visualization</label>
+      <label for="Challenges"><input type="checkbox" value="Challenges" class="inline" />Challenges</label>
+    
+
+    <fieldset>
+      <label for="bio">Any comments or suggestions?</label>
+      <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+    </fieldset> 
+      <button id="submit" type="submit">submit</button>
+    </form>  
+</body>
+</html>
